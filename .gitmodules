@@ -1,0 +1,6 @@
+[submodule "deps/djinni"]
+	path = deps/djinni
+	url = https://github.com/dropbox/djinni.git
+[submodule "deps/gyp"]
+	path = deps/gyp
+	url = https://chromium.googlesource.com/external/gyp.git
