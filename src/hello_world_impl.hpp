@@ -14,10 +14,6 @@ namespace helloworld {
         // Our method that returns a string
         std::string get_hello_world();
         
-    private:
-        
-        int _d(int sides);
-        
     };
     
 }

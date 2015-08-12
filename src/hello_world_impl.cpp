@@ -30,8 +30,4 @@ namespace helloworld {
         
     }
     
-    int HelloWorldImpl::_d(int sides) {
-        return 1;
-    }
-    
 }
