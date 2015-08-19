@@ -4,20 +4,19 @@
             "target_name": "libhelloworld_jni",
             "type": "shared_library",
             "dependencies": [
-              "deps/djinni/support-lib/support_lib.gyp:djinni_jni",
+              "./deps/djinni/support-lib/support_lib.gyp:djinni_jni",
             ],
             "ldflags": [ "-llog", "-Wl,--build-id,--gc-sections,--exclude-libs,ALL" ],
             "sources": [
               "./deps/djinni/support-lib/jni/djinni_main.cpp",
               "<!@(python deps/djinni/example/glob.py generated-src/jni   '*.cpp')",
               "<!@(python deps/djinni/example/glob.py generated-src/cpp   '*.cpp')",
-              "<!@(python deps/djinni/example/glob.py handwritten-src/cpp '*.cpp')",
+              "<!@(python deps/djinni/example/glob.py src '*.cpp')",
             ],
             "include_dirs": [
               "generated-src/jni",
               "generated-src/cpp",
-              "handwritten-src/jni",
-              "handwritten-src/cpp",
+              "src",
             ],
         },
         {
