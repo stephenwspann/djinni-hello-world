@@ -45,7 +45,6 @@
 		F1F486851B7D15940037835E /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../deps/djinni/support-lib/build/Debug-iphoneos/libdjinni_objc.a"; sourceTree = "<group>"; };
 		F1F486861B7D15940037835E /* libhelloworld_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhelloworld_objc.a; path = "../../build/Debug-iphoneos/libhelloworld_objc.a"; sourceTree = "<group>"; };
 		F1F4868B1B7D19B90037835E /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
-		F1F4868D1B7D1D930037835E /* libdiceroller_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiceroller_objc.a; path = "../../../dice-roller/build/Debug-iphoneos/libdiceroller_objc.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +70,6 @@
 		F1F486521B7D13AF0037835E = {
 			isa = PBXGroup;
 			children = (
-				F1F4868D1B7D1D930037835E /* libdiceroller_objc.a */,
 				F1F486851B7D15940037835E /* libdjinni_objc.a */,
 				F1F486861B7D15940037835E /* libhelloworld_objc.a */,
 				F1F4865D1B7D13AF0037835E /* HelloWorld */,
@@ -442,6 +440,7 @@
 				F1F486801B7D13AF0037835E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F486811B7D13AF0037835E /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +449,7 @@
 				F1F486831B7D13AF0037835E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
