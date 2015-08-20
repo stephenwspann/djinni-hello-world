@@ -9,11 +9,19 @@ This project is the end result of the first series of tutorials on [mobilecpptut
 
 ## Installation
 
-first clone the repository in the directory of your choice, then run the `run_djinni.sh` script inside it:
+**1. Clone the repository in the directory of your choice**
+
+**2. Initialize the 3rd party dependencies via git submodules:**
+
+    $ git submodule init
+    $ git submodule update
+
+
+**3. Run the `run_djinni.sh` script at the root of the repository:**
 
     $ sh run_djinni.sh
     
-then run the make files before opening their respective projects:
+**4. Run the make files before opening their respective projects:**
 
     $ make ios
     $ make android
