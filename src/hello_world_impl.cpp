@@ -1,6 +1,5 @@
 #include "hello_world_impl.hpp"
 #include <string>
-#include <iostream>
 
 namespace helloworld {
     
