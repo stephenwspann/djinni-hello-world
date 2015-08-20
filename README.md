@@ -2,7 +2,7 @@
 
 ## Installation
 
-first clone the repository in the directory of your choice, then run the .run_djinni script inside it:
+first clone the repository in the directory of your choice, then run the `run_djinni.sh` script inside it:
 
     $ sh run_djinni.sh
     
