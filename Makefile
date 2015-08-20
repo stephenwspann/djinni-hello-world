@@ -1,13 +1,4 @@
-# rule to lazily clone gyp
-# freeze gyp at the last version with android support
-#./deps/gyp:
-	#git clone https://chromium.googlesource.com/external/gyp.git ./deps/gyp
-	#cd deps/gyp && git checkout -q 0bb67471bca068996e15b56738fa4824dfa19de0
-
 # we specify a root target for android to prevent all of the targets from spidering out
-# lines removed to troubleshoot build errors:
-# mv ./build_ios/deps/djinni/support-lib/support_lib.xcodeproj/ ./build_ios/support_lib.xcodeproj/
-# rm -rf ./build_ios/deps/
 ./build_ios/libhelloworld.xcodeproj: libhelloworld.gyp ./deps/djinni/support-lib/support_lib.gyp helloworld.djinni
 	sh ./run_djinni.sh
 	deps/gyp/gyp --depth=. -f xcode -DOS=ios --generator-output ./build_ios -Ideps/djinni/common.gypi ./libhelloworld.gyp
