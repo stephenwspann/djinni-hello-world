@@ -15,6 +15,11 @@ This project is the end result of the first series of tutorials on [mobilecpptut
 
     $ git submodule init
     $ git submodule update
+    
+**Revert to an older version of GYP:**
+
+    $ cd deps/gyp
+    $ git checkout -q 0bb67471bca068996e15b56738fa4824dfa19de0
 
 
 **3. Run the `run_djinni.sh` script at the root of the repository:**
