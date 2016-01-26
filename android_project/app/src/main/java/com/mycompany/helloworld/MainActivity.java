@@ -2,9 +2,10 @@ package com.mycompany.helloworld;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         helloWorldInterface = HelloWorld.create();
-        Log.d("HelloWorld", helloWorldInterface.getHelloWorld());
     }
 
     @Override
@@ -43,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void buttonWasPressed(View view) {
+        String myString = helloWorldInterface.getHelloWorld();
+        TextView t = (TextView) findViewById(R.id.helloWorldText);
+        t.setText(myString + t.getText());
     }
 }
