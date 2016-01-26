@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonWasPressed(View view) {
-        String myString = helloWorldInterface.getHelloWorld();
+        String myString = helloWorldInterface.getHelloWorld() + "\n";
         TextView t = (TextView) findViewById(R.id.helloWorldText);
         t.setText(myString + t.getText());
     }
