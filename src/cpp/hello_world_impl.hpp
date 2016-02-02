@@ -4,7 +4,7 @@
 
 namespace helloworld {
     
-    class HelloWorldImpl : public HelloWorld {
+    class HelloWorldImpl : public helloworld::HelloWorld {
         
     public:
         
