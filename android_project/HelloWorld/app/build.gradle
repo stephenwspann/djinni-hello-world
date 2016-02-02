@@ -31,10 +31,10 @@ model {
                 jni {
                     source {
                         srcDirs = [
-                                "../../deps/djinni/support-lib/jni",
-                                "../../generated-src/cpp",
-                                "../../generated-src/jni",
-                                "../../src"
+                                "../../../deps/djinni/support-lib/jni",
+                                "../../../generated-src/cpp",
+                                "../../../generated-src/jni",
+                                "../../../src/cpp"
                         ]
                     }
                 }
@@ -42,7 +42,7 @@ model {
                 java {
                     source {
                         srcDirs = [
-                                "../../generated-src/java",
+                                "../../../generated-src/java",
                                 "src/main/java"
                         ]
                     }
@@ -57,11 +57,11 @@ model {
             cppFlags.add("-std=c++11")
             cppFlags.add("-fexceptions")
             cppFlags.add("-frtti")
-            cppFlags.add("-I${file("../../deps/djinni/support-lib")}".toString())
-            cppFlags.add("-I${file("../../deps/djinni/support-lib/jni")}".toString())        // djinni src
-            cppFlags.add("-I${file("../../generated-src/cpp")}".toString())               // app generated-src
-            cppFlags.add("-I${file("../../generated-src/jni")}".toString())                   // app generated-src
-            cppFlags.add("-I${file("../../src")}".toString())
+            cppFlags.add("-I${file("../../../deps/djinni/support-lib")}".toString())
+            cppFlags.add("-I${file("../../../deps/djinni/support-lib/jni")}".toString())        // djinni src
+            cppFlags.add("-I${file("../../../generated-src/cpp")}".toString())               // app generated-src
+            cppFlags.add("-I${file("../../../generated-src/jni")}".toString())                   // app generated-src
+            cppFlags.add("-I${file("../../../src/cpp")}".toString())
         }
     }
 }
