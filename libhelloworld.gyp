@@ -16,7 +16,7 @@
             "include_dirs": [
               "generated-src/jni",
               "generated-src/cpp",
-              "src",
+              "src/cpp",
             ],
         },
         {
@@ -36,7 +36,7 @@
             "include_dirs": [
               "generated-src/objc",
               "generated-src/cpp",
-              "src",
+              "src/cpp",
             ],
         },
     ],
